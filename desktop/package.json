@@ -1,0 +1,70 @@
+{
+  "name": "woodpecker-desktop",
+  "productName": "Woodpecker",
+  "version": "1.0.0",
+  "description": "Woodpecker Method chess puzzles, offline on your computer.",
+  "author": "Woodpecker",
+  "private": true,
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "prepare-data": "node scripts/prepare.mjs",
+    "start": "npm run prepare-data && electron .",
+    "test": "node --test test/*.test.js",
+    "dist": "npm run prepare-data && electron-builder --win"
+  },
+  "devDependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/figtree": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "electron": "^44.4.5",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "app.woodpecker.desktop",
+    "productName": "Woodpecker",
+    "copyright": "Puzzles from The Woodpecker Method books by Axel Smith and Hans Tikkanen",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.cjs",
+      "engine/**/*",
+      "renderer/**/*",
+      "resources/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "electronLanguages": [
+      "en-US"
+    ],
+    "compression": "maximum",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Woodpecker",
+      "installerSidebar": "build/installerSidebar.bmp",
+      "uninstallerSidebar": "build/installerSidebar.bmp",
+      "installerHeader": "build/installerHeader.bmp",
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false,
+      "artifactName": "Woodpecker-Setup-${version}.exe"
+    }
+  }
+}

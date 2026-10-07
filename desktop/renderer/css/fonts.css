@@ -1,0 +1,23 @@
+/* The interface fonts, bundled with the app (scripts/prepare.mjs copies them from @fontsource-variable). */
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 900;
+  src: url(../fonts/figtree-latin-wght-normal.woff2) format("woff2-variations");
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  font-stretch: 75% 100%;
+  src: url(../fonts/bricolage-grotesque-latin-standard-normal.woff2) format("woff2-variations");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url(../fonts/jetbrains-mono-latin-wght-normal.woff2) format("woff2-variations");
+}

@@ -1,0 +1,10 @@
+{
+  "11": {
+    "exclude": true,
+    "note": "Book erratum: diagram 11 repeats the Steinitz-Meitner position, but the solution is Mackenzie-Steinitz, Vienna 1882 (34.Be4). Add 'placement' + 'turn' here once the real position is known."
+  },
+  "567": {
+    "solution": ["Nf6+", "Nxf6", "exf6", "gxf6", "Rxf6", "Qg7", "Rxh6", "f5", "Qh4"],
+    "note": "Book typo: 23...Nxf6 is impossible (no black knight left); 23...gxf6 fits the rest of the line."
+  }
+}

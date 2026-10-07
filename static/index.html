@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Woodpecker</title>
+  <meta name="description" content="Train on 1,127 tactical puzzles from The Woodpecker Method, with spaced review and progress tracking.">
+  <meta name="theme-color" content="#28457a">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/img/logo-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/static/img/logo-64.png">
+  <link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+  <script>
+    // Apply the saved appearance before first paint (the account copy is re-applied after sign-in).
+    (function () {
+      var a = { mode: 'system', light: 'porcelain', dark: 'midnight', accent: 'cobalt' };
+      try { Object.assign(a, JSON.parse(localStorage.getItem('appearance') || '{}')); } catch (e) {}
+      var dark = a.mode === 'dark' || (a.mode === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+      var root = document.documentElement;
+      root.dataset.scheme = dark ? 'dark' : 'light';
+      root.dataset.palette = dark ? a.dark : a.light;
+      root.dataset.accent = a.accent;
+      try { var b = localStorage.getItem('board'); if (b && b !== 'slate') root.dataset.board = b; } catch (e) {}
+      try { var s = localStorage.getItem('pieces'); if (s && s !== 'classic') root.dataset.pieces = s; } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/vendor/chessground.base.css">
+  <link rel="stylesheet" href="/static/css/pieces.css">
+  <link rel="stylesheet" href="/static/css/app.css">
+  <link rel="stylesheet" href="/static/css/themes.css">
+  <link rel="stylesheet" href="/static/css/board.css">
+</head>
+<body>
+  <a class="sr-only" href="#view">Skip to content</a>
+  <header class="topbar" id="topbar" hidden>
+    <div class="topbar-inner">
+      <a href="#/" class="brand" id="brand">Woodpecker</a>
+      <nav aria-label="Main">
+        <a href="#/" data-nav="home" data-icon="target"><span class="label">Train</span></a>
+        <a href="#/review" data-nav="review" data-icon="repeat"><span class="label">Review</span><span class="count" id="due-badge" hidden></span></a>
+        <a href="#/sprint" data-nav="sprint" data-icon="bolt"><span class="label">Sprint</span></a>
+        <a href="#/browse" data-nav="browse" data-icon="grid"><span class="label">Puzzles</span></a>
+        <a href="#/stats" data-nav="stats" data-icon="chart"><span class="label">Statistics</span></a>
+        <a href="#/friends" data-nav="friends" data-icon="users"><span class="label">Friends</span><span class="count" id="social-badge" hidden></span></a>
+      </nav>
+      <div class="userbox">
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button"></button>
+        <a class="user-chip" id="user-chip" href="#/profile" data-nav="profile"></a>
+        <button class="icon-btn" id="logout" type="button" aria-label="Sign out" title="Sign out"></button>
+      </div>
+    </div>
+  </header>
+  <main id="view" class="view" tabindex="-1"></main>
+  <aside class="live-banner surface" id="live-banner" role="status" aria-live="polite" hidden></aside>
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>

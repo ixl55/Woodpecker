@@ -1,0 +1,8 @@
+.git
+.claude
+__pycache__
+*.pdf
+data/app.db
+data/preview.html
+tests
+extract

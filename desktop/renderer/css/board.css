@@ -1,0 +1,33 @@
+/* Board theme (replaces chessground.brown.css): squares and highlights come from the page tokens. */
+cg-board {
+  background-color: var(--sq-light);
+  /* 2x2 tile: top-left light, top-right dark -> a1 is dark in both orientations */
+  background-image: repeating-conic-gradient(var(--sq-dark) 0 25%, var(--sq-light) 0 50%);
+  background-size: 25% 25%;
+  border-radius: 8px;
+  transition: box-shadow var(--dur, .2s) ease;
+}
+cg-board square.last-move { background-color: var(--hl-last); }
+cg-board square.selected { background-color: var(--hl-select); }
+cg-board square.move-dest { background: radial-gradient(var(--hl-dest) 19%, transparent 20%); }
+cg-board square.oc.move-dest { background: radial-gradient(transparent 0%, transparent 79%, var(--hl-dest) 80%); }
+cg-board square.move-dest:hover { background: var(--hl-select); }
+cg-board square.check {
+  background: radial-gradient(ellipse at center, var(--bad) 0%, color-mix(in srgb, var(--bad) 60%, transparent) 35%, transparent 75%);
+}
+.board-mini .cg-wrap, .board-preview .cg-wrap { cursor: default; }
+
+/* Selectable board themes (profile setting), same in light and dark mode */
+:root[data-board="walnut"] { --sq-light: #ecd6b3; --sq-dark: #a87c56; --hl-last: rgba(155, 199, 0, .38); --hl-select: rgba(20, 85, 30, .45); }
+:root[data-board="olive"] { --sq-light: #eeeed2; --sq-dark: #769656; --hl-last: rgba(246, 246, 105, .55); --hl-select: rgba(20, 85, 30, .45); }
+:root[data-board="marble"] { --sq-light: #e6e7e8; --sq-dark: #9fa4a9; --hl-last: rgba(40, 69, 122, .3); --hl-select: rgba(40, 69, 122, .45); }
+:root[data-board="sand"] { --sq-light: #f1e4c7; --sq-dark: #c9a877; --hl-last: rgba(155, 199, 0, .38); --hl-select: rgba(20, 85, 30, .45); }
+
+/* Coordinates drawn by the page (chessground's own are off) so they follow the board theme colours */
+.coords { position: absolute; inset: 0; pointer-events: none; font-family: var(--font-body); font-weight: 700; font-size: clamp(9px, 1.5vw, 12px); line-height: 1; }
+.coords .ranks { position: absolute; top: 0; left: 0; height: 100%; display: grid; grid-template-rows: repeat(8, 1fr); }
+.coords .ranks span { padding: 4px 0 0 4px; }
+.coords .files { position: absolute; bottom: 0; left: 0; width: 100%; display: grid; grid-template-columns: repeat(8, 1fr); }
+.coords .files span { text-align: right; padding: 0 4px 4px 0; }
+.coords .on-light { color: var(--sq-dark); }
+.coords .on-dark { color: var(--sq-light); }

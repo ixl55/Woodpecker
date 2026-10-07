@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: woodpecker-puzzles
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips='*'
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DATABASE_URL
+        sync: false # paste the Neon connection string in the Render dashboard
+      - key: SECRET_KEY
+        generateValue: true
+      - key: HTTPS_ONLY
+        value: "1"
+      # how many proxies append to X-Forwarded-For in front of the app (rate limits key on the real client IP)
+      - key: PROXY_HOPS
+        value: "1"

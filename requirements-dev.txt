@@ -1,0 +1,7 @@
+-r requirements.txt
+# extraction pipeline (only needed to rebuild data/puzzles.json from the PDF)
+pymupdf>=1.24
+chess>=1.10
+# tests
+pytest>=8
+httpx>=0.27

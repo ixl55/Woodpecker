@@ -1,0 +1,251 @@
+/* =============================================================================
+   Named themes. Generated from the palette table that was contrast-checked
+   (ink, muted, faint and accent all >= 4.5:1 on ground, surface and soft fills).
+   <html> carries data-scheme (light|dark), data-palette and data-accent,
+   set before first paint by the inline script in index.html.
+   ============================================================================= */
+/* ---- light shades (Porcelain is the default) ---- */
+:root, :root[data-palette="porcelain"] {
+  --ground: #eff2f5;
+  --surface: #ffffff;
+  --surface-2: #e8ecf0;
+  --surface-3: #dde3e9;
+  --ink: #111820;
+  --muted: #4f5b67;
+  --faint: #5d6874;
+  --line: #d9dfe5;
+  --line-strong: #c3ccd5;
+}
+:root[data-palette="parchment"] {
+  --ground: #f4efe6;
+  --surface: #fffcf6;
+  --surface-2: #ebe4d7;
+  --surface-3: #e0d7c6;
+  --ink: #1f1a13;
+  --muted: #584f41;
+  --faint: #655b4c;
+  --line: #e2d9ca;
+  --line-strong: #cfc3ae;
+}
+:root[data-palette="mist"] {
+  --ground: #e8edf2;
+  --surface: #f8fafc;
+  --surface-2: #dfe6ed;
+  --surface-3: #d3dce5;
+  --ink: #0f1a24;
+  --muted: #475666;
+  --faint: #556474;
+  --line: #d3dce5;
+  --line-strong: #bcc8d3;
+}
+:root[data-palette="sage"] {
+  --ground: #ecf0ea;
+  --surface: #fbfcfa;
+  --surface-2: #e2e8df;
+  --surface-3: #d6ded2;
+  --ink: #141c16;
+  --muted: #4a574d;
+  --faint: #58655b;
+  --line: #d7dfd3;
+  --line-strong: #c1ccbd;
+}
+
+:root[data-palette="blush"] {
+  --ground: #f6eef0;
+  --surface: #fffafb;
+  --surface-2: #efe3e7;
+  --surface-3: #e6d6dc;
+  --ink: #1f1418;
+  --muted: #5c4a51;
+  --faint: #6a575e;
+  --line: #e8dade;
+  --line-strong: #d6c2c9;
+}
+:root[data-palette="lavender"] {
+  --ground: #f0eef7;
+  --surface: #fcfbff;
+  --surface-2: #e6e2f1;
+  --surface-3: #dbd6ea;
+  --ink: #17142a;
+  --muted: #4f4a66;
+  --faint: #5d5874;
+  --line: #e0dcee;
+  --line-strong: #cbc5e0;
+}
+:root[data-palette="glacier"] {
+  --ground: #e9f3f5;
+  --surface: #f9fdfe;
+  --surface-2: #dcebef;
+  --surface-3: #cfe1e6;
+  --ink: #0d1d22;
+  --muted: #43585f;
+  --faint: #51666d;
+  --line: #d4e4e8;
+  --line-strong: #bcd1d7;
+}
+:root[data-palette="butter"] {
+  --ground: #f6f3e4;
+  --surface: #fffdf3;
+  --surface-2: #ede8d2;
+  --surface-3: #e2dcc2;
+  --ink: #1d1b0e;
+  --muted: #55513b;
+  --faint: #635f48;
+  --line: #e6e0c8;
+  --line-strong: #d2cbad;
+}
+
+/* ---- dark scheme: semantic colours, board, highlights and elevation ---- */
+:root[data-scheme="dark"] {
+  --ok: #5cc78e; --ok-soft: #15302a;
+  --bad: #f08477; --bad-soft: #3a1e1c;
+  --gold: #e0b857;
+  --sq-light: #a9b7c6; --sq-dark: #5f7489;
+  --hl-dest: rgba(0, 0, 0, .42);
+  --elev-1: 0 1px 2px rgba(0, 0, 0, .4);
+  --elev-2: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .3);
+  --elev-3: 0 8px 32px rgba(0, 0, 0, .55);
+  color-scheme: dark;
+}
+/* ---- dark shades (Midnight is the default) ---- */
+:root[data-scheme="dark"], :root[data-palette="midnight"] {
+  --ground: #0b0f14;
+  --surface: #131920;
+  --surface-2: #1b232c;
+  --surface-3: #242e39;
+  --ink: #e8edf2;
+  --muted: #a3aebb;
+  --faint: #8a96a3;
+  --line: #26303a;
+  --line-strong: #34404c;
+}
+:root[data-palette="obsidian"] {
+  --ground: #09090b;
+  --surface: #131315;
+  --surface-2: #1c1c1f;
+  --surface-3: #26262a;
+  --ink: #ececee;
+  --muted: #a6a6ad;
+  --faint: #8c8c94;
+  --line: #27272b;
+  --line-strong: #36363c;
+}
+:root[data-palette="graphite"] {
+  --ground: #1a1c1f;
+  --surface: #23262a;
+  --surface-2: #2c3035;
+  --surface-3: #363b41;
+  --ink: #eceef0;
+  --muted: #b3b8be;
+  --faint: #9ca1a8;
+  --line: #353a40;
+  --line-strong: #444a51;
+}
+:root[data-palette="espresso"] {
+  --ground: #14100c;
+  --surface: #1e1813;
+  --surface-2: #28201a;
+  --surface-3: #332a22;
+  --ink: #efe8e0;
+  --muted: #b8ab9b;
+  --faint: #9e9181;
+  --line: #33291f;
+  --line-strong: #43372b;
+}
+
+:root[data-palette="forest"] {
+  --ground: #0b120e;
+  --surface: #131c17;
+  --surface-2: #1b2620;
+  --surface-3: #24312a;
+  --ink: #e6efe9;
+  --muted: #a2b3a8;
+  --faint: #88998e;
+  --line: #24302a;
+  --line-strong: #324037;
+}
+:root[data-palette="plum"] {
+  --ground: #120d17;
+  --surface: #1b1522;
+  --surface-2: #241d2d;
+  --surface-3: #2e2639;
+  --ink: #eee8f4;
+  --muted: #b3a8c1;
+  --faint: #998da8;
+  --line: #2c2436;
+  --line-strong: #3b3147;
+}
+:root[data-palette="abyss"] {
+  --ground: #07121a;
+  --surface: #0e1c26;
+  --surface-2: #152632;
+  --surface-3: #1d313f;
+  --ink: #e3f0f5;
+  --muted: #9fb6c2;
+  --faint: #849ca8;
+  --line: #1d2f3b;
+  --line-strong: #2a3f4d;
+}
+:root[data-palette="wine"] {
+  --ground: #150b0d;
+  --surface: #1f1316;
+  --surface-2: #2a1b1f;
+  --surface-3: #352328;
+  --ink: #f3e8ea;
+  --muted: #bea5aa;
+  --faint: #a48a90;
+  --line: #332126;
+  --line-strong: #452f35;
+}
+
+/* ---- accents: light variants (Cobalt is the default) ---- */
+:root, :root[data-accent="cobalt"] {
+  --accent: #28457a; --accent-hover: #1f3864; --accent-soft: #e0e8f5; --accent-ink: #ffffff;
+  --hl-last: color-mix(in srgb, #28457a 30%, transparent); --hl-select: color-mix(in srgb, #28457a 45%, transparent);
+}
+:root[data-accent="emerald"] {
+  --accent: #15634d; --accent-hover: #0f503e; --accent-soft: #d9eee6; --accent-ink: #ffffff;
+  --hl-last: color-mix(in srgb, #15634d 30%, transparent); --hl-select: color-mix(in srgb, #15634d 45%, transparent);
+}
+:root[data-accent="amber"] {
+  --accent: #854c00; --accent-hover: #6e3f00; --accent-soft: #f6e9d4; --accent-ink: #ffffff;
+  --hl-last: color-mix(in srgb, #854c00 30%, transparent); --hl-select: color-mix(in srgb, #854c00 45%, transparent);
+}
+:root[data-accent="violet"] {
+  --accent: #583d9c; --accent-hover: #4a3285; --accent-soft: #ebe5f7; --accent-ink: #ffffff;
+  --hl-last: color-mix(in srgb, #583d9c 30%, transparent); --hl-select: color-mix(in srgb, #583d9c 45%, transparent);
+}
+:root[data-accent="teal"] {
+  --accent: #0d5f6d; --accent-hover: #0a4d59; --accent-soft: #d8edf0; --accent-ink: #ffffff;
+  --hl-last: color-mix(in srgb, #0d5f6d 30%, transparent); --hl-select: color-mix(in srgb, #0d5f6d 45%, transparent);
+}
+:root[data-accent="rose"] {
+  --accent: #992d58; --accent-hover: #80244a; --accent-soft: #f6e0e9; --accent-ink: #ffffff;
+  --hl-last: color-mix(in srgb, #992d58 30%, transparent); --hl-select: color-mix(in srgb, #992d58 45%, transparent);
+}
+
+/* ---- accents: dark variants ---- */
+:root[data-scheme="dark"], :root[data-scheme="dark"][data-accent="cobalt"] {
+  --accent: #8fb0ea; --accent-hover: #a7c2f0; --accent-soft: #1b2940; --accent-ink: var(--ground);
+  --hl-last: color-mix(in srgb, #8fb0ea 30%, transparent); --hl-select: color-mix(in srgb, #8fb0ea 45%, transparent);
+}
+:root[data-scheme="dark"][data-accent="emerald"] {
+  --accent: #5fcca6; --accent-hover: #7ad7b7; --accent-soft: #132f27; --accent-ink: var(--ground);
+  --hl-last: color-mix(in srgb, #5fcca6 30%, transparent); --hl-select: color-mix(in srgb, #5fcca6 45%, transparent);
+}
+:root[data-scheme="dark"][data-accent="amber"] {
+  --accent: #f0b45a; --accent-hover: #f4c47b; --accent-soft: #33240f; --accent-ink: var(--ground);
+  --hl-last: color-mix(in srgb, #f0b45a 30%, transparent); --hl-select: color-mix(in srgb, #f0b45a 45%, transparent);
+}
+:root[data-scheme="dark"][data-accent="violet"] {
+  --accent: #b9a2f2; --accent-hover: #c9b6f5; --accent-soft: #261d3d; --accent-ink: var(--ground);
+  --hl-last: color-mix(in srgb, #b9a2f2 30%, transparent); --hl-select: color-mix(in srgb, #b9a2f2 45%, transparent);
+}
+:root[data-scheme="dark"][data-accent="teal"] {
+  --accent: #63c7d6; --accent-hover: #82d3df; --accent-soft: #11292e; --accent-ink: var(--ground);
+  --hl-last: color-mix(in srgb, #63c7d6 30%, transparent); --hl-select: color-mix(in srgb, #63c7d6 45%, transparent);
+}
+:root[data-scheme="dark"][data-accent="rose"] {
+  --accent: #f28ab5; --accent-hover: #f5a3c5; --accent-soft: #36182a; --accent-ink: var(--ground);
+  --hl-last: color-mix(in srgb, #f28ab5 30%, transparent); --hl-select: color-mix(in srgb, #f28ab5 45%, transparent);
+}

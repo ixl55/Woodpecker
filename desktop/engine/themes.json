@@ -1,0 +1,182 @@
+[
+ {
+  "key": "mate_in_1",
+  "name": "Mate in 1",
+  "description": "Deliver checkmate in one move.",
+  "group": "tactics"
+ },
+ {
+  "key": "mate_in_2",
+  "name": "Mate in 2",
+  "description": "A forced checkmate in two moves.",
+  "group": "tactics"
+ },
+ {
+  "key": "mate_in_3",
+  "name": "Mate in 3",
+  "description": "A forced checkmate in three moves.",
+  "group": "tactics"
+ },
+ {
+  "key": "long_mate",
+  "name": "Long mate",
+  "description": "A forced checkmate in four moves or more.",
+  "group": "tactics"
+ },
+ {
+  "key": "back_rank_mate",
+  "name": "Back-rank mate",
+  "description": "Mate on the back rank, where the king is boxed in by its own pawns.",
+  "group": "tactics"
+ },
+ {
+  "key": "smothered_mate",
+  "name": "Smothered mate",
+  "description": "A knight mates a king surrounded by its own pieces.",
+  "group": "tactics"
+ },
+ {
+  "key": "fork",
+  "name": "Fork",
+  "description": "One piece attacks two valuable targets at once.",
+  "group": "tactics"
+ },
+ {
+  "key": "pin",
+  "name": "Pin",
+  "description": "A piece can't move because the king would be exposed behind it.",
+  "group": "tactics"
+ },
+ {
+  "key": "skewer",
+  "name": "Skewer",
+  "description": "A valuable piece is attacked and must move, exposing the piece behind it.",
+  "group": "tactics"
+ },
+ {
+  "key": "discovered_attack",
+  "name": "Discovered attack",
+  "description": "Moving one piece unveils an attack by another.",
+  "group": "tactics"
+ },
+ {
+  "key": "double_check",
+  "name": "Double check",
+  "description": "Two pieces give check at once, so the king must move.",
+  "group": "tactics"
+ },
+ {
+  "key": "sacrifice",
+  "name": "Sacrifice",
+  "description": "Give up material to get something bigger.",
+  "group": "tactics"
+ },
+ {
+  "key": "quiet_move",
+  "name": "Quiet move",
+  "description": "A calm move, with no check, capture or direct threat, that sets up the win.",
+  "group": "tactics"
+ },
+ {
+  "key": "promotion",
+  "name": "Promotion",
+  "description": "A pawn reaches the last rank.",
+  "group": "tactics"
+ },
+ {
+  "key": "material",
+  "name": "Win material",
+  "description": "The line ends with you ahead in material.",
+  "group": "tactics"
+ },
+ {
+  "key": "endgame",
+  "name": "Endgame",
+  "description": "Few pieces left on the board.",
+  "group": "tactics"
+ },
+ {
+  "key": "long_combination",
+  "name": "Long combination",
+  "description": "A line of five moves or more.",
+  "group": "tactics"
+ },
+ {
+  "key": "pawn_break",
+  "name": "Pawn break",
+  "description": "Push a pawn to challenge the opponent's pawn chain.",
+  "group": "positional"
+ },
+ {
+  "key": "prophylaxis",
+  "name": "Prophylaxis",
+  "description": "Stop the opponent's plan before it starts.",
+  "group": "positional"
+ },
+ {
+  "key": "piece_improvement",
+  "name": "Improve a piece",
+  "description": "Reroute or activate a badly placed piece.",
+  "group": "positional"
+ },
+ {
+  "key": "right_exchange",
+  "name": "The right exchange",
+  "description": "Trade the pieces that make your position better.",
+  "group": "positional"
+ },
+ {
+  "key": "outpost",
+  "name": "Outpost",
+  "description": "Plant a piece on a strong square the opponent can't easily challenge.",
+  "group": "positional"
+ },
+ {
+  "key": "open_file",
+  "name": "Open file",
+  "description": "Open a file or take it over with the rooks.",
+  "group": "positional"
+ },
+ {
+  "key": "bishops",
+  "name": "Good and bad bishops",
+  "description": "Keep the bishop pair, lose your bad bishop, or exploit the opponent's.",
+  "group": "positional"
+ },
+ {
+  "key": "pawn_weakness",
+  "name": "Pawn weaknesses",
+  "description": "Create or target weak pawns: isolated, doubled, backward or hanging.",
+  "group": "positional"
+ },
+ {
+  "key": "passed_pawn",
+  "name": "Passed pawn",
+  "description": "Create, push or stop a passed pawn.",
+  "group": "positional"
+ },
+ {
+  "key": "king_attack",
+  "name": "Attack on the king",
+  "description": "Start or strengthen an attack against the king.",
+  "group": "positional"
+ },
+ {
+  "key": "space",
+  "name": "Space",
+  "description": "Gain space and restrict the opponent's pieces.",
+  "group": "positional"
+ },
+ {
+  "key": "centre",
+  "name": "Centre",
+  "description": "Fight for the centre or strike at it.",
+  "group": "positional"
+ },
+ {
+  "key": "exchange_sacrifice",
+  "name": "Exchange sacrifice",
+  "description": "Give a rook for a minor piece for a lasting advantage.",
+  "group": "positional"
+ }
+]
